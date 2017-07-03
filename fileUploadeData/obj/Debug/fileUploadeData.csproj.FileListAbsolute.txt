@@ -1,0 +1,5 @@
+\\psf\home\documents\visual studio 2015\Projects\fileUploade\fileUploadeData\bin\Debug\fileUploadeData.dll
+\\psf\home\documents\visual studio 2015\Projects\fileUploade\fileUploadeData\bin\Debug\fileUploadeData.pdb
+\\psf\home\documents\visual studio 2015\Projects\fileUploade\fileUploadeData\obj\Debug\fileUploadeData.dll
+\\psf\home\documents\visual studio 2015\Projects\fileUploade\fileUploadeData\obj\Debug\fileUploadeData.pdb
+\\psf\home\documents\visual studio 2015\Projects\fileUploade\fileUploadeData\obj\Debug\fileUploadeData.csprojResolveAssemblyReference.cache

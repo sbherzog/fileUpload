@@ -1,0 +1,37 @@
+﻿@using fileUploadeData
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@if (TempData["successful"] != null)
+{
+    <div class="alert alert-success">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>@TempData["successful"]</strong>
+    </div>
+}
+
+
+<table class="table table-bordered table-condensed table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date listit</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (imageClass image in @Model.imageList)
+        {
+            <tr>
+                <td>@image.title</td>
+                <td>@image.dateListed.ToShortDateString()</td>
+                <td><img src="/image/@image.imageName" height="100px" /></td>
+                <td><a href="/Home/viewSingleItem/?id=@image.id" class="btn btn-primary">Show Details</a>                
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

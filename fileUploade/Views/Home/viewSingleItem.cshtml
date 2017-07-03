@@ -1,0 +1,22 @@
+﻿@using fileUploadeData
+@{
+    ViewBag.Title = "viewSingleItem";
+}
+
+<div class="col-md-6">
+    <img src="/image/@Model.singleListing.imageName" width="100%" />
+</div>
+<div class="col-md-6">
+    <h2 style="font-weight:bold">@Model.singleListing.title </h2>
+    <p><strong>Description: </strong>@Model.singleListing.description</p>
+    <p><strong>Date:</strong> @Model.singleListing.dateListed</p>
+    <p><strong>Contact Name:</strong> @Model.singleListing.personName</p>
+    <p><strong>Contact Number:</strong> @Model.singleListing.phoneNumber</p>
+</div>
+@if (Model.cookie == Model.singleListing.cookieCode)
+{
+    <form action="/Home/DeleteListing/" method="post">
+        <input type="hidden" name="id" value="@Model.singleListing.id" />
+        <button class="btn btn-danger" type="submit">Delete Listing</button>
+    </form>
+}
